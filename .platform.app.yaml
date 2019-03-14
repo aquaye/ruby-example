@@ -7,6 +7,8 @@ hooks:
     bundle install
   deploy: |
     rails db:migrate
+  post_deploy: |
+    rake assets:precompile
 
 web:
   commands:
@@ -15,3 +17,4 @@ web:
     '/':
       root: 'public'
       passthru: true
+      allow: true
