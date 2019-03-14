@@ -1,0 +1,17 @@
+name: "ruby_example"
+type: "ruby:2.5"
+disk: 1024
+
+hooks:
+  build: |
+    bundle install
+  deploy: |
+    rails db:migrate
+
+web:
+  commands:
+    start: 'rails server'
+  locations:
+    '/':
+      root: 'public'
+      passthru: true
