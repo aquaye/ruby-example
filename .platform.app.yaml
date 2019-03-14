@@ -10,7 +10,7 @@ hooks:
 
 web:
   commands:
-    start: 'rails server'
+    start: 'rails server -p $PORT'
   locations:
     '/':
       root: 'public'
