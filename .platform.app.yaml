@@ -8,7 +8,7 @@ hooks:
   deploy: |
     rails db:migrate
   post_deploy: |
-    rake assets:precompile
+    RAILS_ENV=production rake assets:precompile
 
 web:
   commands:
