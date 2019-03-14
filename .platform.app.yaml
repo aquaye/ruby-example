@@ -5,10 +5,9 @@ disk: 1024
 hooks:
   build: |
     bundle install
+    RAILS_ENV=production rake assets:precompile
   deploy: |
     rails db:migrate
-  post_deploy: |
-    RAILS_ENV=production rake assets:precompile
 
 web:
   commands:
