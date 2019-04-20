@@ -10,7 +10,7 @@ hooks:
     which bundle
     gem install bundler -v '2.0.1'
     which bundle
-    bundle -v
+    bundle --version
     bundle install -V
     rake assets:precompile
   deploy: |
