@@ -6,6 +6,8 @@ hooks:
   build: |
     ruby -v
     which ruby
+    bundle -v
+    which bundle
     gem install bundler -v '2.0.1'
     which bundle
     bundle -v
