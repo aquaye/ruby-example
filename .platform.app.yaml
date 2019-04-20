@@ -6,9 +6,9 @@ hooks:
   build: |
     ruby -v
     which ruby
-    gem install bundler -v '2.0.1' -V
+    gem install bundler -v '2.0.1'
     which bundle
-    bundle install
+    bundle install -V
     rake assets:precompile
   deploy: |
     rails db:migrate
