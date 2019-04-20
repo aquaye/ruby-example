@@ -8,6 +8,7 @@ hooks:
     which ruby
     gem install bundler -v '2.0.1'
     which bundle
+    bundle -vV
     bundle install -V
     rake assets:precompile
   deploy: |
