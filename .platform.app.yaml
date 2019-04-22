@@ -5,7 +5,8 @@ disk: 1024
 hooks:
   build: |
     gem install bundler -v '2.0.1'
-    bundle install -V
+    bundle update --bundler
+    bundle install
     rake assets:precompile
   deploy: |
     rails db:migrate
