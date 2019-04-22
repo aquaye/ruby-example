@@ -8,7 +8,8 @@ hooks:
     which ruby
     bundle -v
     which bundle
-    gem install bundler -v '2.0.1'
+    gem install -h
+    gem install bundler -V -v '2.0.1'
     which bundle
     /app/.global/bin/bundle -v
     /app/.global/bin/bundle install -V
