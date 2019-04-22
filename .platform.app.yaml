@@ -10,8 +10,8 @@ hooks:
     which bundle
     gem install bundler -v '2.0.1'
     which bundle
-    bundle --version
-    bundle install -V
+    /app/.global/bin/bundle -v
+    /app/.global/bin/bundle install -V
     rake assets:precompile
   deploy: |
     rails db:migrate
